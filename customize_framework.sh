@@ -55,5 +55,6 @@ then
     applyPatch "overlay/services"
     rm -rf $2/smali/com/android/server/power/ShutdownThread*
     cp -rf ../android/services.jar.out/smali/com/android/server/power/ShutdownThread*.smali $2/smali/com/android/server/power/
+    cp -rf $1/smali/com/android/server/backup/BackupManagerService*.smali $2/smali/com/android/server/backup/
 fi
 
