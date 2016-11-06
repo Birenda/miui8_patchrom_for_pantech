@@ -8,3 +8,4 @@ OTHER_DIR=$PWD/other
 
 cp -f other/file_contexts out/target_files/META/
 rm -rf out/target_files/SYSTEM/vendor/preinstall
+rm -rf out/target_files/SYSTEM/lib64
