@@ -53,5 +53,7 @@ if [ $2 = "$BUILD_OUT/services" ]
 then
     applyPatch "overlay/services"
     cp -rf $1/smali/com/android/server/backup/BackupManagerService*.smali $2/smali/com/android/server/backup/
+    rm -rf $2/smali/com/android/server/power/ShutdownThread*
+    cp -rf $1/smali/com/android/server/power/ShutdownThread*.smali $2/smali/com/android/server/power/
 fi
 
